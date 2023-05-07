@@ -46,7 +46,7 @@ Esto creará una carpeta llamada "nombre_proyecto" con los archivos y la estruct
 >     "django.contrib.messages",\
 >     "django.contrib.staticfiles",\
 >     "nombre_aplicacion",\
-> ]\
+> ]
 
 ### Archivos importantes ###
 - <nombre_proyecto>/manage.py ---> Archivo basico del proyecto
