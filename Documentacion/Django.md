@@ -1,6 +1,17 @@
 ### Que es Django? ###
+Django es un framework de desarrollo web de alto nivel escrito en Python que sigue el patrón de arquitectura de software Modelo-Vista-Controlador (MVC) y Modelo-Vista-Template (MVT).
 
 ### Para que sirve? ###
+Django fue creado para facilitar la creación de aplicaciones web complejas y escalables, al mismo tiempo que se enfoca en la eficiencia del desarrollo y en la seguridad de la aplicación.
+
+Django proporciona una amplia variedad de características y herramientas que permiten a los desarrolladores crear aplicaciones web de manera más rápida y eficiente, incluyendo:
+
+- Un sistema de enrutamiento que permite dirigir solicitudes HTTP a la vista correspondiente.
+- Un ORM (Object-Relational Mapping) que permite interactuar con la base de datos de manera orientada a objetos.
+- Una interfaz de administración que permite crear, leer, actualizar y eliminar datos de la base de datos.
+- Un sistema de plantillas que permite crear y renderizar vistas HTML dinámicamente.
+- Un sistema de autenticación y autorización que permite gestionar el acceso de los usuarios a las diferentes funcionalidades de la aplicación.
+- Un conjunto de herramientas de seguridad que permiten proteger la aplicación contra diferentes tipos de ataques, como inyecciones SQL, cross-site scripting (XSS), entre otros.
 
 ### Como inicializar un proyecto ###
 1. Instalar Anaconda para utilizar Python
@@ -24,6 +35,19 @@ Esto creará una carpeta llamada "nombre_proyecto" con los archivos y la estruct
 
 5. Esto creará una carpeta llamada "nombre_aplicacion" dentro del proyecto con los archivos necesarios para una aplicación.
 
+6. Agregar la App a la lista de Apps instaladas
+
+> Abrir el archivo urls.py del proyecto
+> INSTALLED_APPS = [
+>     "django.contrib.admin",
+>     "django.contrib.auth",
+>     "django.contrib.contenttypes",
+>     "django.contrib.sessions",
+>     "django.contrib.messages",
+>     "django.contrib.staticfiles",
+>     "nombre_aplicacion",
+> ]
+
 ### Archivos importantes ###
 - <nombre_proyecto>/manage.py ---> Archivo basico del proyecto
 - <nombre_proyecto>/<nombre_proyecto>/__init__.py ---> Le decimos a Python que interprete este directorio como un paquete
@@ -33,3 +57,5 @@ Esto creará una carpeta llamada "nombre_proyecto" con los archivos y la estruct
 
 ### Notas importantes
 - El archivo <nombre_proyecto>/<nombre_proyecto>/settings.py contiene todas las aplicaciones instaladas del proyecto en la lista "INSTALLED_APPS"
+- Cuando creamos una App tenemos que agregarla a la lista de Apps instaladas "INSTALLED_APPS" que esta en settings.py
+- Cada App tiene su archivo Python de vistas que se llama views.py y se encuentra en la carpeta de la App
