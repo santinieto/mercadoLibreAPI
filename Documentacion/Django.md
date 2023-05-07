@@ -37,16 +37,16 @@ Esto creará una carpeta llamada "nombre_proyecto" con los archivos y la estruct
 
 6. Agregar la App a la lista de Apps instaladas
 
-> Abrir el archivo urls.py del proyecto
-> INSTALLED_APPS = [
->     "django.contrib.admin",
->     "django.contrib.auth",
->     "django.contrib.contenttypes",
->     "django.contrib.sessions",
->     "django.contrib.messages",
->     "django.contrib.staticfiles",
->     "nombre_aplicacion",
-> ]
+> Abrir el archivo urls.py del proyecto\
+> INSTALLED_APPS = [\
+>     "django.contrib.admin",\
+>     "django.contrib.auth",\
+>     "django.contrib.contenttypes",\
+>     "django.contrib.sessions",\
+>     "django.contrib.messages",\
+>     "django.contrib.staticfiles",\
+>     "nombre_aplicacion",\
+> ]\
 
 ### Archivos importantes ###
 - <nombre_proyecto>/manage.py ---> Archivo basico del proyecto
